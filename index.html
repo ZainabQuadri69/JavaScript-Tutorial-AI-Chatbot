@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutor</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>JavaScript Tutor</h1>
+            <div class="status">Online</div>
+        </header>
+
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will appear here -->
+        </div>
+
+        <div class="chat-input-container">
+            <div class="input-wrapper">
+                <div class="input-group">
+                    <textarea id="userInput" placeholder="Ask me anything about JavaScript..." rows="1"
+                        maxlength="1000"></textarea>
+                    <button id="sendButton">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="features">
+                    <button id="clearChat">Clear Conversation</button>
+                    <button id="toggleTheme">Toggle Theme</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load scripts in correct order -->
+    <script src="scripts/api.js"></script>
+    <script src="scripts/chatbot.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
